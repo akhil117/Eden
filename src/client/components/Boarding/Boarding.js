@@ -74,7 +74,7 @@ const Boarding = (props) => {
 
         {/** Stepper */}
       <Grid item container direction="row" className={classes.Stepper}>
-        { <Stepper currentStep={page} stages={4} /> }
+        { <Stepper currentStep={page+1} stages={4} /> }
       </Grid>
 
         {/** Layout */}

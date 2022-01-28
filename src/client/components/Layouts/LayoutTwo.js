@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 
 import InputField from "../common/Input/SimpleText";
 import ActionButton from "../common/Button";
+import UrlInputField from "../common/Input/UrlText/UrlInputField";
 
 const useStyles = makeStyles((theme) => ({
     Heading: {
@@ -112,7 +113,7 @@ const LayoutTwo = (props) =>{
                     <InputField fieldName="Workspace Name" isError={message.workspace.length !== 0} errorMessage={message.workspace}  onChangeFunc={setWorkspace} onChangeValidFunc={onInputChange} value={workspace}/>
                 </Grid>
                 <Grid item className={classes.Gap}>
-                    <InputField fieldName={`WorkSpaceUrl`} isError={message.url.length!==0} errorMessage={message.url} onChangeFunc={setUrl} onChangeValidFunc={onInputChange} value={url}/>
+                    <UrlInputField fieldName="WorkSpace Url" isError={message.url.length!==0} errorMessage={message.url} onChangeFunc={setUrl} onChangeValidFunc={onInputChange} value={url}/>
                 </Grid>
                 <Grid item className={classes.Gap}>
                     <ActionButton name="Continue" onButtonClick={handleChange} />
