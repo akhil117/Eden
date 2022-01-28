@@ -14,10 +14,32 @@ const useStyles = makeStyles((theme) => ({
       fontWeight: 500,
       fontSize: "2rem",
       marginTop: "0.75rem",
+      [theme.breakpoints.up("lg")]: {
+        fontSize: "2rem",
+    },
+      [theme.breakpoints.up("xl")]: {
+        fontSize: "2rem",
+      },
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "1.25rem",
+      },
+  
+      [theme.breakpoints.down("xs")]: {
+        fontSize: "1.25rem",
+      },
     },
     Subtitle:{
         fontWeight: "300",
         fontFamily:"Inter",
+        [theme.breakpoints.down("sm")]: {
+            fontSize: "0.9rem",
+            textAlign:"center"
+          },
+      
+          [theme.breakpoints.down("xs")]: {
+            fontSize: "0.9rem",
+            textAlign:"center"
+          },
     },
     Inputs:{
         marginTop:"2rem"

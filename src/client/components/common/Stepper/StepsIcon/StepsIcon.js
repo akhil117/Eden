@@ -13,6 +13,15 @@ const ColorlibStepIconRoot = styled("div")(({ theme, ownerState }) => ({
     color: "#fff",
     width: 50,
     height: 50,
+    [theme.breakpoints.down("sm")]: {
+      width: 50,
+      height:50
+    },
+
+    [theme.breakpoints.down("xs")]: {
+      width: 50,
+      height:50
+    },
     display: "flex",
     borderRadius: "50%",
     justifyContent: "center",

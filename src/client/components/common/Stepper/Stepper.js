@@ -13,7 +13,7 @@ const StepperComponent = (props) => {
   const steps = Array(stages).fill("");
 
   return (
-    <Box sx={{ width: "30%" }}>
+    <Box sx={{ width: "100%" }}>
       <Stepper activeStep={currentStep} alternativeLabel connector={<ColorlibConnector />}>
         {steps.map((label) => (
           <Step key={label}>
