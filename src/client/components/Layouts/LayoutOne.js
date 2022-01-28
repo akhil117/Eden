@@ -114,7 +114,7 @@ const LayoutOne = (props) => {
                     <InputField fieldName="Display Name" isError={message.dname.length !== 0}  errorMessage = {message.dname} onChangeFunc={setDname} onChangeValidFunc={onInputChange} value={dname}/>
                 </Grid>
                 <Grid item className={classes.Gap}>
-                    <ActionButton name="Continue" onButtonClick={handleChange} />
+                    <ActionButton name="Create Workspace" onButtonClick={handleChange} />
                 </Grid>
             </Grid>
 

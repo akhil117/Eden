@@ -116,7 +116,7 @@ const LayoutTwo = (props) =>{
                     <UrlInputField fieldName="WorkSpace Url" isError={message.url.length!==0} errorMessage={message.url} onChangeFunc={setUrl} onChangeValidFunc={onInputChange} value={url}/>
                 </Grid>
                 <Grid item className={classes.Gap}>
-                    <ActionButton name="Continue" onButtonClick={handleChange} />
+                    <ActionButton name="Create Workspace" onButtonClick={handleChange} />
                 </Grid>
             </Grid>
 
